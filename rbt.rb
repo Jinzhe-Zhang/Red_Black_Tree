@@ -524,7 +524,7 @@ loop {
             elsif i[1].to_i<1 or i[1].to_i>$operation.length
                 $info="错误：jump参数超出范围（1——#{$operation.length}）[等待输入]："
             else
-                $logpage=i[1].to_i+1
+                $logpage=i[1].to_i-1
                 $info="以上是第#{$logpage+1}页的操作记录，接下来要干什么？[等待输入]："
             end
         elsif i[0]=="return"
